@@ -87,7 +87,8 @@ public class SystemPerformanceManagerTest
 		this.spMgr.startManager();
 		
 		try {
-			Thread.sleep(60000L);
+			//Thread.sleep(60000L);
+			Thread.sleep(6000L);
 		} catch (InterruptedException e) {
 			// ignore
 		}

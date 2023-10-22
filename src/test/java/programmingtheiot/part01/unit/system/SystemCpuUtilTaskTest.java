@@ -26,17 +26,14 @@ import programmingtheiot.gda.system.SystemCpuUtilTask;
  * but serve as a starting point for the student implementing
  * additional functionality within their Programming the IoT
  * environment.
- *
  */
 public class SystemCpuUtilTaskTest
 {
 	// static
-	
 	private static final Logger _Logger =
 		Logger.getLogger(SystemCpuUtilTaskTest.class.getName());
 	
 	// member var's
-	
 	private SystemCpuUtilTask cpuUtilTask = null;
 	
 	// test setup methods

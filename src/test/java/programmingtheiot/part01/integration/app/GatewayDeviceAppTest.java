@@ -31,7 +31,7 @@ public class GatewayDeviceAppTest
 {
 	// static
 	
-	private static final Logger _Logger =
+	private static final Logger _Logger = 
 		Logger.getLogger(GatewayDeviceAppTest.class.getName());
 	
 
@@ -92,6 +92,7 @@ public class GatewayDeviceAppTest
 		
 		try {
 			Thread.sleep(65000L);
+			//Thread.sleep(6500L);
 		} catch (InterruptedException e) {
 			// ignore
 		}

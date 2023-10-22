@@ -9,8 +9,11 @@
 package programmingtheiot.gda.system;
 
 import java.lang.management.ManagementFactory;
-
 import programmingtheiot.common.ConfigConst;
+import java.lang.management.OperatingSystemMXBean;
+//import java.util.logging.Logger;
+
+
 
 
 /**
@@ -36,7 +39,15 @@ public class SystemCpuUtilTask extends BaseSystemUtilTask
 	@Override
 	public float getTelemetryValue()
 	{
-		return 0.0f;
+		//return 0.0f;
+		//return (float) ManagementFactory.getOperatingSystemMXBean().getSystemLoadAverage();
+		
+		OperatingSystemMXBean mxBean = ManagementFactory.getOperatingSystemMXBean();
+		double cpuUtil = mxBean.getSystemLoadAverage();
+		//_Logger.info("====================================My ___ Test : CPU Util: " + cpuUtil);
+		//_Logger.info("====================================My ___ Test : CPU Util: " + mxBean.getAvailableProcessors());
+		
+		return (float) cpuUtil;
 	}
 	
 }
